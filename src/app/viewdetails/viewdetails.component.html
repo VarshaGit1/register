@@ -1,0 +1,27 @@
+<div class="container" style="text-align:center;">
+  <br><br><br><br>   
+
+    <div class="form-group">
+      <button type="button" (click)="searchById()">Search  :</button> 
+      <input type="number" id="search" name="search" placeholder="Enter id" size="50" [(ngModel)]="searchText" /><br><br> 
+    </div> 
+    
+    <table style="width:100%">
+      
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Gender</th>          
+        </tr>
+      </thead> 
+      <tbody>         
+        <tr >
+          <td>{{filterData?.id}}</td>
+          <td>{{filterData?.name}}</td>
+          <td>{{filterData?.gender}}</td>
+        </tr>
+      </tbody> 
+    </table>    
+</div>
+

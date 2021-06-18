@@ -1,0 +1,79 @@
+<div class="container" >
+    
+  <form name="details" method="post" align="center"><br><br><br><br>
+    <h1>Registration</h1><br>
+    <div class="form">
+      <table align="center">        
+
+        <div class="form-group">
+          <td align="left">
+            <label for="firstname">First Name</label> 
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"  required/><br><br> 
+          </td>
+        </div>  
+    
+        <div class="form-group">
+          <td align="left">
+            <label for="lasttname">Last Name</label>
+            <input type="text" id="lastname" name="lastname"  placeholder="Last Name" required/><br><br> 
+          </td>
+        </div>
+    
+        <div class="form-group">
+          <td align="left">       
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+          </td>
+        </div>
+    
+        <div class="form-group">
+          <td align="left">
+            <label for="dropdown_list">Country</label>
+            <select id="dropdown_list">  
+              <option>--select--</option>      
+              <option>China</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>India</option>
+              <option>United States</option>
+              <option>United Kingdom</option>      
+            </select><br><br> 
+          </td>
+        </div>
+    
+        <div class="form-group">
+          <td align="left">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email" size="20" required><br><br>
+          </td>
+        </div>
+       
+        <div class="form-group">
+          <td align="center">
+            <input type="checkbox" id="alert">I accept the <a href="#">terms of use and Privacy Policy</a><br><br>      
+            <button type="button" class="button1" name="btn" id="btn" value="btn" (click)="triggerModal(modalData)" onclick="getdetails()">Register</button>
+          </td>
+        </div>
+      </table> 
+    </div>           
+  </form> 
+
+    
+  <ng-template #modalData let-modal>    
+
+    <div class="modal-header">         
+      <h3 class="modal-title" id="loginModalLabel">Confirm submission</h3>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross-click')">
+        <span aria-hidden="true">X</span>
+      </button>  
+    </div>     
+          
+    <div class="modal-footer">
+      <button type="button" class="btn btn-submit" >Submit</button>
+      <button type="button" class="btn btn-cancel" (click)="modal.close('Save Click')">Cancel</button>   
+    </div>  
+        
+  </ng-template>  
+  
+  </div>

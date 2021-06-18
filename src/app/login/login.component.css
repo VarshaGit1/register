@@ -1,0 +1,31 @@
+h1{
+font-family:"Times New Roman";
+margin-top: 10px;
+font-size: 45px;
+color:#1c8adb;
+margin-right:80px;
+}
+
+label{
+    width:240px;
+    display:inline-block;
+}
+
+div{
+    text-align: center;
+}
+
+.container{
+    text-align:center;
+    font-size: 15px;
+}
+
+.button1{
+    color:white;
+    background-color: #1c8adb;
+    border: none;
+    font-size: 17px;    
+    width:30%;
+    text-align:center;
+}
+
