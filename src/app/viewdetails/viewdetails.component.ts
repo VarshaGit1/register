@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @Component({
@@ -11,14 +11,16 @@ export class ViewdetailsComponent implements OnInit {
   searchText:any;
   filterData:any;
   empData = [
-    { id: 1, name: 'Raj', gender: 'M' },
-    { id: 2, name: 'Geeta', gender: 'F' },
-    { id: 3, name: 'Sam', gender: 'M' },
-    { id: 4, name: 'Meera', gender: 'F' },    
+    { id: 1, name: 'Raj', gender: 'M' ,location:'Mangalore'},
+    { id: 2, name: 'Geeta', gender: 'F' ,location:'Chennai'},
+    { id: 3, name: 'Sam', gender: 'M' ,location:'Mangalore'},
+    { id: 4, name: 'Meera', gender: 'F' ,location:'Hyderabad'}, 
+    { id: 5, name: 'Gopi', gender: 'F' ,location:'Chennai'}, 
+    { id: 6, name: 'Rahul', gender: 'M' ,location:'Mangalore'}, 
+    { id: 7, name: 'Tia', gender: 'F' ,location:'Hyderabad'},    
   ];  
   
-  constructor(private modalService:NgbModal){    
-  }
+  constructor(){}
 
   ngOnInit(): void {    
   }
@@ -31,8 +33,5 @@ export class ViewdetailsComponent implements OnInit {
     else 
     this.filterData=this.empData.find(x=>x.id===this.searchText);    
   }
-  
-  
-
 }
 

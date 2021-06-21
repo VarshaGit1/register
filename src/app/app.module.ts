@@ -7,8 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+
 
 @NgModule({
   declarations: [
@@ -16,13 +19,15 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     NavbarComponent,
     LoginComponent,
     ViewdetailsComponent,
-        
+    DashboardComponent,    
+    EmployeelistComponent,       
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    FormsModule ,   
+    FormsModule , 
+    ReactiveFormsModule,  
    Ng2SearchPipeModule
   ],
   providers: [],
