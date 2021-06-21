@@ -8,7 +8,6 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class LoginComponent 
 { 
-  inputData:any; 
   fn:any;
   ln:any;
   bday:any;
@@ -22,7 +21,7 @@ export class LoginComponent
 
   triggerModal(content:any)
   {       
-    return this.modalService.open(content,this.msg1=this.inputData);   
+    return this.modalService.open(content);   
   }    
   
 }
