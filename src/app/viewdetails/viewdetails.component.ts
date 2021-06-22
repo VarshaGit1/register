@@ -10,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class ViewdetailsComponent implements OnInit {
   searchText:any;
   filterData:any;
-  empData = [
+  empData = 
+  [
     { id: 1, name: 'Raj', gender: 'M' ,location:'Mangalore'},
     { id: 2, name: 'Geeta', gender: 'F' ,location:'Chennai'},
     { id: 3, name: 'Sam', gender: 'M' ,location:'Mangalore'},

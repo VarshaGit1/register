@@ -4,7 +4,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { EmployeelistComponent } from './employeelist/employeelist.component';
+
+import { EmployeelistmangaloreComponent } from './employeelistmangalore/employeelistmangalore.component';
+import { EmployeelisthyderabadComponent } from './employeelisthyderabad/employeelisthyderabad.component';
+import { EmployeelistchennaiComponent } from './employeelistchennai/employeelistchennai.component';
 
 
 const routes: Routes = [ 
@@ -12,7 +15,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'viewdetails', component: ViewdetailsComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'employeelist', component: EmployeelistComponent},
+  {path: 'employeelistmangalore', component: EmployeelistmangaloreComponent},
+  {path: 'employeelisthyderabad', component: EmployeelisthyderabadComponent},
+  {path: 'employeelistchennai', component: EmployeelistchennaiComponent}
 ]
 
 @NgModule({

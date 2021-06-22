@@ -14,8 +14,7 @@ export class LoginComponent
   email:any;
   gender:any;
   loc:any;
-  msg1:any;
-  
+  msg1:any; 
   
   constructor(private modalService:NgbModal){}
 
