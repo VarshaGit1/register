@@ -10,12 +10,8 @@ import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
-import { EmployeelistmangaloreComponent } from './employeelistmangalore/employeelistmangalore.component';
-import { EmployeelisthyderabadComponent } from './employeelisthyderabad/employeelisthyderabad.component';
-import { EmployeelistchennaiComponent } from './employeelistchennai/employeelistchennai.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { RemoveanddeletePipe } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     ViewdetailsComponent,
     DashboardComponent,    
-    EmployeelistmangaloreComponent, EmployeelisthyderabadComponent, EmployeelistchennaiComponent,       
+    EmployeelistComponent ,RemoveanddeletePipe       
   ],
   imports: [
     BrowserModule,
@@ -32,8 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule , 
     ReactiveFormsModule,  
-   Ng2SearchPipeModule,
-   HttpClientModule
+   Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

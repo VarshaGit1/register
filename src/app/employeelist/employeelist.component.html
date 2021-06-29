@@ -1,0 +1,28 @@
+<div class="container">
+    <form name="details" method="post" align="center"><br>
+        <h1><u>Employees</u></h1><br><br>   
+        
+        <div class="tabledetails">  
+            <table style="width:75%" >          
+              <thead>
+                <tr>                  
+                  <th>ID</th>
+                  <th>Employee Name</th>
+                  <th>Gender</th>
+                  <th>Location</th>                       
+                </tr>
+              </thead><br>     
+              <tbody>         
+                <tr *ngFor="let item of filteredData">                  
+                  <td>{{item.id}}</td>
+                  <td>{{item.name}}</td>
+                  <td>{{item.gender}}</td>
+                  <td>{{item.location}}</td>                  
+                </tr>
+              </tbody>                                                     
+            </table><br>
+            <button type="button" id="btn" name="btn" class="btn" style="margin:5px;" (click)="sendMessage()">Verify</button> 
+        </div>
+
+    </form>
+</div>

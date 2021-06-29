@@ -4,20 +4,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
-import { EmployeelistmangaloreComponent } from './employeelistmangalore/employeelistmangalore.component';
-import { EmployeelisthyderabadComponent } from './employeelisthyderabad/employeelisthyderabad.component';
-import { EmployeelistchennaiComponent } from './employeelistchennai/employeelistchennai.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
 
 
 const routes: Routes = [ 
 
   {path: 'login', component: LoginComponent},
   {path: 'viewdetails', component: ViewdetailsComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'employeelistmangalore', component: EmployeelistmangaloreComponent},
-  {path: 'employeelisthyderabad', component: EmployeelisthyderabadComponent},
-  {path: 'employeelistchennai', component: EmployeelistchennaiComponent}
+  {path: 'dashboard', component: DashboardComponent}, 
+  {path: 'employeelist', component: EmployeelistComponent}
 ]
 
 @NgModule({
